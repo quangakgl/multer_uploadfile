@@ -1,0 +1,23 @@
+{
+  "name": "uploadfile_multer",
+  "version": "1.0.0",
+  "description": "uplaod",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "quang",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "gm": "^1.23.0",
+    "multer": "^1.3.0",
+    "nunjucks": "^3.0.1",
+    "process-nextick-args": "^1.0.7",
+    "safe-buffer": "^5.1.0",
+    "shortid": "^2.2.8",
+    "util-deprecate": "^1.0.2"
+  }
+}
