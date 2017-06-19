@@ -51,7 +51,7 @@ app.upload = multer({storage: storage, fileFilter: fileFilter})
 app.get('/', (req, res) => {
     res.render('views')
 })
-    // render ra trang  localhost:3333/upload bằng phương thức get
+    // render ra trang  localhost:3333/upload bằng phương thức pot
 app.post('/upload', app.upload.single('photo'), function (req, res, next) {
     console.log(req.file);
     console.log(req.body);
@@ -67,7 +67,7 @@ app.post('/upload', app.upload.single('photo'), function (req, res, next) {
 
 app.listen(3333, () =>{
     console.log('listen on localhost:3333')
-})
+}) // tạo ra localhost:3333
 app.use(function (err, req, res, next) {
     console.error(err.stack)
     res.status(500).send('Error: ' + err.message)
